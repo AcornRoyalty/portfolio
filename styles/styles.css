@@ -1,0 +1,179 @@
+/*h1 {
+  text-transform: lowercase;
+}
+*/
+/* test to see if it link */
+
+.hero {
+  font-family: Roboto, serif;
+  text-align:center;
+  min-height: 800px;
+  background-size: cover;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column; /* was center */
+  align-items: center;
+  justify-content: center; /* space around.. space between*/
+  /*font-stye:      */
+}
+/* change display prop to flex
+center along x-axis
+y-axis using align items and justify-content props
+use flex-dir
+
+.hero flex {
+  display: flex;
+  flex-direction: center;
+  justify-content: flex-end; /* space around.. space between }
+  */
+.hero h2{
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+#intro h1,#intro h5{
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+/*** for the intro shadow had .intro instead of #intro **/
+#intro h5 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+/*** or #intro for line 45, same thing **/
+.hero h1 {
+  line-height: 55px;
+  font-size: 72px;
+}
+
+.landscape.hero {
+color:white;
+}
+
+.cta {
+  background-color: black;
+  color:white;
+  padding: 0px;
+  width: 180px;
+  font-size: 18px;
+  line-height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: #00CFFF;
+}
+
+#about {
+  min-height: 0;
+}
+
+#about .left-col {
+  color: #00E2AC;
+  padding: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#about.right-col {
+  text-align: left;
+  padding: 20px;
+}
+.left-col h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+/* where this come from below?*/
+  font-size: 60px;
+*/
+/*  font-weight: 700px;*/
+  line-height: 55px;
+
+}
+.right-col h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#gallery {
+    background-color: #EEFDF9;
+    padding: 0px;
+    margin: 0px;
+}
+#gallery .col-md-4 {
+  overflow: hidden;
+  padding: 0px 5px 10px 5px;
+}
+/* with the gall - md 4 - nice grid like */
+
+.col-md-4 img {
+  height:100%;
+  max-width: 390px;
+  max-height: 380px;
+}
+.hero.bridge {
+  background-image: url(../img/bridge/bridge.jpg);
+  width: 100%;
+}
+#contact p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 740px;
+}
+#social {
+  padding: 20px;
+}
+#social a{
+  /*margin: 0px 0px 0px 10px;*/
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  text-decoration: none;
+}
+#social img {
+  height: 20px;
+}
+img:hover {
+  opacity: 0.5;
+}
+
+#footer {
+  height: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 150px;
+/* dont notice a change */
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+#footer a {
+  color:black;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+#footer.footer-item {
+  flex: 1;
+  max-width: 100px;
+}
+/*footer havent removed styles html */
+
+.copyright {
+  margin-left: auto;
+  color:#00E2AC;
+}
+
+/*
+Set the display property to use flexbox
+Use flexbox to arrange the direction of the items into a row
+Use flexbox to align items in the center
+Mark Complete
+
+*/

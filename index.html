@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<!-- notes
+added hero
+ looks crazy -->
+<!-- everything looks good except the spacing of spike at the bottom...and now fixed -->
+<head>
+  <title>Barnaby's Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <!--    linking to main now
+  <link rel="stylesheet" type="text/css" href="styles\styles.css" />
+-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" type="text/css">
+<!-- that 100 700 fixed the font issue -->
+
+</head>
+<body>
+  <!-- div id attribute
+  <div id="my-box">This is my box! Put your text in some other box.</div>
+-->
+<div id="intro" class="hero landscape container-fluid">
+    <h1>Spike Spiegel</h1>
+    <h5>Freelance Photographer</h5>
+    <!-- img
+    <img src="xxx" alt="descritp"/> -->
+    <!--clickable =
+    <a href="http://codecademy.com">Link description here</a> -->
+<!-- originally had thisxxxxxxxxxxxxxxxxxxxxxx
+    <a href="#gallery">
+    forgot what this really does--->
+
+    <!---correct answer ----->
+    <a href="#gallery"><button type="button" class="cta">Gallery</button></a>
+
+
+<!--Test Buttons-!>
+  <a href="somepage.html"><button type="button">Text of Some Page</button></a>
+    <a class="some_class" href=”#” target=”_blank”>click here< /a >
+    <a class="btn" href="#">Learn More</a>
+      <!- adding image
+      <img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
+    -->
+  </div>
+  <!-- need to coinjoin/add together instead of separate lines
+  had:
+
+<div id="about">
+  <div class="container-fluid">
+
+  should be -->
+  <div  id="about" class="hero container ">
+    <!-- corrected from container-fuild to container -->
+    <h2>About Me</h2>
+    <div class="row">
+      <!--2 divs to create 2 columns of equal size -->
+      <div class="left-col col-md-6"> <!--had col-md-4-->
+        <h2>I'm a <br> self-taught photographer with a passion for travel and design</h2>
+      </div>
+      <div class="right-col col-md-6">
+        <h5>"I was born in Cape Town, South Africa and moved around a lot as a kid. To keep me distracted, my parents gave me a camera. Since then, I look at the world through a lens. I've visited over 30 countries and taken almost one quarter of a million photographs, and I feel like I'm just getting started. From landscapes to personal portraits and exciting scenes, I love being able to capture a moment. Join me on my journey!</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- changed from this to what isnt **
+  <div glass="gallery hero">
+    <div class="container-fluid">
+
+meh ******** -->
+<div id="gallery" class=" hero container-fluid">
+      <h2>Gallery</h2>
+      <!-- 3x3  grid -->
+    <!-- original idea  <p style="color:teal;font-size:50px;height:300x;width:350px;"> -->
+  <div class="row">
+    <!--original idea
+    <div class="col-md-4"><img src="img\gallery\gallery-01.jpg" alt="blind scarf"/>
+    <div class="col-md-4"><img src="img\gallery\gallery-02.jpg" alt="blind scarf"/>
+    <div class="col-md-4"><img src="img\gallery\gallery-03.jpg" alt="blind scarf"/>
+    -->
+    <!--correction below-->
+    <div class="col-md-4"><img src="img\gallery\gallery-01.jpg" alt="blind scarf"/></div>
+    <!-- removing instyles lines of control now using css
+    style="height: 300px;width:350px; -->
+    <div class="col-md-4"><img src="img\gallery\gallery-02.jpg" alt="meh"/></div>
+    <div class="col-md-4"><img src="img\gallery\gallery-03.jpg" alt="meh2"/></div>
+  </div>
+  <div class="row">
+        <div class="col-md-4"><img src="img\gallery\gallery-04.jpg" alt="meh 4"/></div>
+        <div class="col-md-4"><img src="img\gallery\gallery-05.jpg" alt="meh 5"/></div>
+        <div class="col-md-4"><img src="img\gallery\gallery-06.jpg" alt="meh 6"/></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+          <img src="img\gallery\gallery-07.jpg" alt="green"/>
+        </div>
+        <div class="col-md-4">
+          <img src="img\gallery\gallery-08.jpg" alt="car interior"/>
+        </div>
+        <div class="col-md-4">
+          <img src="img\gallery\gallery-09.jpg" alt="death flower"/>
+    </div>
+  </div>
+</div>
+<!-- gallery wasnt closed so properties were leaking to footer -->
+<!-- full width
+<div class="container-fluid">
+  ...
+</div>
+-->
+<!--???????????
+<div class="container-fluid">
+  <div class="bridge">
+  </div>
+</div>
+-->
+<div class="container-fluid bridge hero"></div>
+
+<div id="contact" class="hero container-fluid">
+  <h2>Contact Me</h2>
+  <!--note ndash was given by prompt-->
+  <p>I'm available for freelance &ndash; from events like weddings to documenting your next adventure, let's chat!</p>
+
+<a href="mailto:mail@example.net"><button type="button" class="cta">Contact</button></a>
+
+<div id="social">
+
+  <!-- correction, removed container class here-->
+<!-- improved social part of assignment 12-11
+removed style portion to fix up in css
+-->
+  <!--same as the earlier pictures--->
+
+  <a href="http://www.twitter.com"><img src="img/icons/twitter.svg"></a>
+  <a href="http://www.instagram.com"><img src="img\icons\instagram.svg"></a>
+  <a href="http://www.medium.com"><img src="img\icons\medium.svg"></a>
+  <a href="http://www.facebook.com"><img src="img\icons\facebook.svg"></a>
+<!-- does it matter which way / \ go?-->
+  </div>
+</div>
+<!--footer section-->
+<div id="footer">
+  <div class="footer-item"><h4><b>Spike <br> Spiegel</b></h4></div>
+  <div class="footer-item"><a href="#about">About</a></div>
+  <div class="footer-item"><a href="#gallery">Gallery</a></div>
+  <div class="footer-item"><a href="#contact">Contact</a></div>
+  <div class="copyright">&copy; Spike Spiegel</div>
+</div>
+</body>
+</html>
